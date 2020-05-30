@@ -1,0 +1,17 @@
+Justin Sligh, 2020
+
+Usage
+
+Add your QRZ credentials to:
+self.username
+self.password
+
+Customize the user agent to your application
+self.agent
+
+Pass single callsigns in as a string. Returns a dictionary.
+result = qrz.get_details(query='KN4MQR')
+
+Pass a list of callsigns. Returns a list of dictionaries.
+callsigns = ['KN4MQR', 'K8HQ', 'W2HR']
+results = qrz.get_details(query=callsigns)
