@@ -6,6 +6,9 @@ from xml.etree import ElementTree as ET
 
 class QRZ:
 
+    # A python class to query QRZ asynchronously.
+    # Justin Sligh, 2020
+    
     def __init__(self):
         self.username = 'INSERT'
         self.password = 'INSERT'
